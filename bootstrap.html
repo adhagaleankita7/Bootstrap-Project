@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>GreenLedger - Accounting Firm</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      .hero {
+        background:
+          linear-gradient(rgba(0, 100, 60, 0.7), rgba(0, 100, 60, 0.7)),
+          url("https://images.unsplash.com/photo-1554224155-6726b3ff858f");
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+      }
+
+      .service-box {
+        padding: 30px;
+        border: 1px solid #eee;
+        border-radius: 10px;
+        transition: 0.3s;
+      }
+
+      .service-box img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+      }
+
+      .service-box:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">GreenLedger</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#Home">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#Services">Services</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#About">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <section class="hero" id="Home">
+      <div class="container">
+        <h1 class="display-4">Your Trusted Accounting Partner</h1>
+        <p class="lead">
+          Expert financial solutions for businesses of all sizes
+        </p>
+        <button class="btn btn-success mt-3">Get Started</button>
+      </div>
+    </section>
+
+    <!-- Services -->
+
+    <section class="py-5" id="Services">
+      <div class="container text-center">
+        <h2 class="mb-5">Our Services</h2>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="service-box">
+              <img
+                src="https://www.shutterstock.com/image-vector/flat-green-calculator-icon-circle-260nw-362014988.jpg"
+                class="img-fluid rounded mb-3"
+                alt="Tax Service"
+              />
+              <h5>Tax Preparation</h5>
+              <p>Comprehensive tax planning and filing.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service-box">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj_J36Z3jIr2VUIIYta7Cl31CjqA0ah-R-bw&s"
+                class="img-fluid rounded mb-3"
+                alt="Financial Consulting"
+              />
+              <h5>Financial Consulting</h5>
+              <p>Strategic advice to help your business grow.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service-box">
+              <img
+                src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/63237f85345947.5d7903622ba6f.jpg"
+                class="img-fluid rounded mb-3"
+                alt="Bookkeeping"
+              />
+              <h5>Bookkeeping</h5>
+              <p>Accurate and timely financial records.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+
+    <section class="py-5 bg-light" id="About">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2>About GreenLedger</h2>
+
+            <p>
+              At GreenLedger, we specialize in delivering precise, reliable, and
+              efficient accounting solutions. With years of industry experience,
+              our team ensures that your financial management is seamless,
+              giving you more time to focus on your business.
+            </p>
+          </div>
+
+          <div class="col-md-6 text-center">
+            <img
+              src="https://images.unsplash.com/photo-1554224155-6726b3ff858f"
+              class="img-fluid rounded shadow"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+
+    <section class="py-5" id="Contact">
+      <div class="container">
+        <h2 class="text-center mb-4">Contact Us</h2>
+
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Name"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your Email"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  rows="4"
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+
+              <button class="btn btn-success w-100">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="text-center text-white py-3" style="background: #0b5d3b">
+      <p class="mb-0">© 2025 GreenLedger. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
